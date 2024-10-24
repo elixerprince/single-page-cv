@@ -37,6 +37,10 @@ li {
   text-indent: 34px;
 }
 
+a {
+  color: var(--primary-color);
+}
+
 /*==================================
             TYPOGRAPHY
 ==================================*/
@@ -70,10 +74,18 @@ h3 {
 .main-page {
   background-color: var(--secondary-color);
   border: 3px solid var(--primary-color);
-  cursor: pointer;
   margin: 32px auto;
   padding: 56px;
   width: fit-content;
+}
+
+.address {
+  align-items: center;
+  display: flex;
+
+  .icon {
+    width: 28px;
+  }
 }
 
 /*==================================
@@ -84,4 +96,9 @@ h3 {
   border: none;
   color: var(--primary-color);
   height: 3px;
+}
+
+.icon {
+  width: 20px;
+  vertical-align: bottom;
 }
