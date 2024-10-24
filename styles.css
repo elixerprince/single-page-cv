@@ -25,6 +25,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: 1px solid orange;
 }
 
 ul {
@@ -87,7 +88,7 @@ h3 {
   display: flex;
 
   .icon {
-    width: 28px; 
+    width: 28px;
   }
 }
 
@@ -106,11 +107,19 @@ h3 {
   vertical-align: bottom;
 }
 
-@media (width < 360px) {
+@media (width <= 800px) {
+  body {
+    margin: 0 24px;
+  }
+
   .title,
   .subtitle,
   .heading,
   address {
     text-align: center;
+  }
+
+  .address {
+    margin: auto;
   }
 }
