@@ -24,7 +24,6 @@ body {
 *::after {
   box-sizing: border-box;
   margin: 0;
-  /* outline: 2px solid orange; Temporary */
   padding: 0;
 }
 
@@ -54,8 +53,13 @@ a {
 .heading {
   color: var(--heading-two-color);
   font-size: 20px;
-  font-weight: 400;
   margin: 8px 0;
+}
+
+.subtitle,
+.heading,
+h3 {
+  font-weight: 400;
 }
 
 .heading {
@@ -65,7 +69,6 @@ a {
 h3 {
   color: var(--heading-three-color);
   font-size: 20px;
-  font-weight: 400;
 }
 
 /*==================================
@@ -84,7 +87,7 @@ h3 {
   display: flex;
 
   .icon {
-    width: 28px;
+    width: 28px; 
   }
 }
 
@@ -101,4 +104,13 @@ h3 {
 .icon {
   width: 20px;
   vertical-align: bottom;
+}
+
+@media (width < 360px) {
+  .title,
+  .subtitle,
+  .heading,
+  address {
+    text-align: center;
+  }
 }
