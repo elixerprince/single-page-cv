@@ -1,0 +1,87 @@
+/*==================================
+          RESET DEFAULTS
+==================================*/
+:root {
+  --heading-two-color: rgb(47, 158, 68);
+  --heading-three-color: rgb(68, 139, 205);
+  --primary-font: system-ui, sans-serif;
+  --primary-color: rgb(30, 30, 30);
+  --secondary-color: rgb(255, 255, 255);
+}
+
+html {
+  font-family: var(--primary-font);
+}
+
+body {
+  background-color: rgb(204, 204, 204);
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  /* outline: 2px solid orange; Temporary */
+  padding: 0;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+li {
+  list-style-position: inside;
+  text-indent: 34px;
+}
+
+/*==================================
+            TYPOGRAPHY
+==================================*/
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 20px 0 4px;
+}
+
+.subtitle,
+.heading {
+  color: var(--heading-two-color);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 8px 0;
+}
+
+.heading {
+  margin-top: 16px;
+}
+
+h3 {
+  color: var(--heading-three-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*==================================
+            LAYOUT
+==================================*/
+.main-page {
+  background-color: var(--secondary-color);
+  border: 3px solid var(--primary-color);
+  cursor: pointer;
+  margin: 32px auto;
+  padding: 56px;
+  width: fit-content;
+}
+
+/*==================================
+            COMPONENTS
+==================================*/
+.top-rule {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--primary-color);
+  height: 3px;
+}
