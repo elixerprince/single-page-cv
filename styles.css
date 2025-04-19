@@ -1,60 +1,60 @@
-/*==================================
-          RESET DEFAULTS
-==================================*/
 :root {
-  --heading-two-color: rgb(47, 158, 68);
-  --heading-three-color: rgb(68, 139, 205);
-  --primary-font: system-ui, sans-serif;
-  --primary-color: rgb(30, 30, 30);
-  --secondary-color: rgb(255, 255, 255);
+  --font-primary: system-ui, sans-serif;
+  /* COLOURS*/
+  --color-primary: rgb(30, 30, 30);
+  --color-secondary: rgb(255, 255, 255);
+  --color-bg: rgb(204, 204, 204);
+  --color-h2: rgb(47, 158, 68);
+  --color-h3: rgb(68, 139, 205);
 }
 
+/*===========================================
+                RESETS
+===========================================*/
 html {
-  font-family: var(--primary-font);
+  font-family: var(--font-primary);
 }
 
 body {
-  background-color: rgb(204, 204, 204);
-  color: var(--primary-color);
-  font-size: 16px;
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  font-size: 1rem;
 }
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px solid orange;
 }
 
 ul {
-  list-style-type: circle;
+  list-style: circle;
 }
 
 li {
   list-style-position: inside;
-  text-indent: 34px;
+  text-indent: 2rem;
 }
 
 a {
-  color: var(--primary-color);
+  color: inherit;
 }
 
 /*==================================
             TYPOGRAPHY
 ==================================*/
 .title {
-  font-size: 36px;
+  font-size: 2.25rem;
+  text-transform: uppercase;
   font-weight: 500;
-  margin: 20px 0 4px;
+  margin: 1.25rem 0 0.25rem;
 }
 
 .subtitle,
 .heading {
   color: var(--heading-two-color);
-  font-size: 20px;
-  margin: 8px 0;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
 }
 
 .subtitle,
@@ -64,12 +64,12 @@ h3 {
 }
 
 .heading {
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 h3 {
   color: var(--heading-three-color);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 /*==================================
@@ -77,9 +77,9 @@ h3 {
 ==================================*/
 .main-page {
   background-color: var(--secondary-color);
-  border: 3px solid var(--primary-color);
-  margin: 32px auto;
-  padding: 56px;
+  border: 0.1875rem solid var(--primary-color);
+  margin: 2rem auto;
+  padding: 3.5rem;
   width: fit-content;
 }
 
@@ -88,7 +88,7 @@ h3 {
   display: flex;
 
   .icon {
-    width: 28px;
+    width: 1.75rem;
   }
 }
 
@@ -99,17 +99,17 @@ h3 {
   background-color: var(--primary-color);
   border: none;
   color: var(--primary-color);
-  height: 3px;
+  height: 0.1875rem;
 }
 
 .icon {
-  width: 20px;
+  width: 1.25rem;
   vertical-align: bottom;
 }
 
 @media (width <= 800px) {
   body {
-    margin: 0 24px;
+    margin: 0 1.5rem;
   }
 
   .title,
